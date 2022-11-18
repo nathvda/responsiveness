@@ -1,0 +1,80 @@
+body {
+    background-color:#DC3535;
+    font-size:1em;
+    display:flex;
+    flex-direction:column;
+    text-align:justify;
+}
+
+h1, h2{
+    margin:0;
+    padding:0;
+}
+
+div{
+background-color:transparent;
+margin:1rem;
+padding:1rem;
+background-image:linear-gradient(45deg, transparent, rgba(255,255,255,0.2));
+border-radius:1em;
+border:1px solid rgba(255,255,255,0.2);
+color:#202020;
+font-family:tahoma;
+}
+
+/* this was used to make the boxes disappear, I don't need it anymore to stack the three of them.
+/*#small{
+    display:block;
+}
+
+#large, #medium{
+    display:none;
+}*/
+
+@media (min-width:480px) and (max-width:1024px) {
+    body{ 
+    background-color:#F49D1A;
+    font-size:1.5em;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    }
+
+   #small{
+    flex-basis:calc((100%/3)*2);
+   }
+
+  #medium{ /* display:block;*/
+    flex-basis:calc((100%/3));
+    }
+
+    #large{ 
+        flex-basis:100%;
+    }
+
+
+
+   /* #small, #large{
+        display:none;
+    
+    }*/
+
+}
+
+@media (min-width:1024px) {
+    body{ 
+    background-color:#FFE15D;
+    font-size:2em;
+    display:flex;
+    flex-direction:row;
+    }
+
+/*    #large{
+        display:block;
+    }
+
+    #small, #medium{
+        display:none;
+    }
+*/
+}
