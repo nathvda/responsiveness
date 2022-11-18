@@ -1,19 +1,19 @@
+html, body, h1, h2{
+    margin:0;
+    padding:0;
+}
+
 body {
     background-color:#DC3535;
     font-size:1em;
     display:flex;
     flex-direction:column;
     text-align:justify;
-}
-
-h1, h2{
-    margin:0;
-    padding:0;
+    padding:2rem;
 }
 
 div{
 background-color:transparent;
-margin:1rem;
 padding:1rem;
 background-image:linear-gradient(45deg, transparent, rgba(255,255,255,0.2));
 border-radius:1em;
@@ -40,20 +40,23 @@ font-family:tahoma;
     flex-wrap:wrap;
     }
 
+    div{ 
+    box-sizing:border-box;
+    }
+
    #small{
     flex-basis:calc((100%/3)*2);
    }
 
-  #medium{ /* display:block;*/
+  #medium{ 
+    /* display:block;*/
     flex-basis:calc((100%/3));
     }
 
     #large{ 
         flex-basis:100%;
     }
-
-
-
+    
    /* #small, #large{
         display:none;
     
