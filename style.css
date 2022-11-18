@@ -1,7 +1,4 @@
-html, body, h1, h2{
-    margin:0;
-    padding:0;
-}
+html, body, h1,h2{ margin: 0;}
 
 body {
     background-color:#DC3535;
@@ -9,20 +6,22 @@ body {
     display:flex;
     flex-direction:column;
     text-align:justify;
-    padding:2rem;
+    justify-content:space-around;
+    padding:10px;
+
 }
 
 div{
-background-color:transparent;
-padding:1rem;
-background-image:linear-gradient(45deg, transparent, rgba(255,255,255,0.2));
-border-radius:1em;
-border:1px solid rgba(255,255,255,0.2);
-color:#202020;
-font-family:tahoma;
+    background-color:transparent;
+    background-image:linear-gradient(45deg, transparent, rgba(255,255,255,0.2));
+    border-radius:1em;
+    color:#202020;
+    font-family:tahoma;
+    box-sizing:border-box;
+    padding:1rem;
 }
 
-/* this was used to make the boxes disappear, I don't need it anymore to stack the three of them.
+/* this was used to make the boxes disappear, I don't need it anymore if we want to stack the three of them.
 /*#small{
     display:block;
 }
@@ -40,23 +39,19 @@ font-family:tahoma;
     flex-wrap:wrap;
     }
 
-    div{ 
-    box-sizing:border-box;
-    }
-
-   #small{
-    flex-basis:calc((100%/3)*2);
+#small{
+   width:calc((100%/3)*2);
    }
 
-  #medium{ 
+#medium{ 
     /* display:block;*/
-    flex-basis:calc((100%/3));
+    width:calc((100%/3));
     }
 
-    #large{ 
-        flex-basis:100%;
+#large{ 
+    width:100%;
     }
-    
+
    /* #small, #large{
         display:none;
     
