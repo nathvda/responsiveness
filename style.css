@@ -3,21 +3,23 @@ margin: 0;
 box-sizing:border-box;}
 
 body {
-    background-color:#DC3535;
+    background-color:#0D4C92;
     font-size:1em;
     display:grid;
     grid-template-areas: "first" "second" "third";
     grid-gap:20px;
     padding:20px;
 }
+
 div{
     background-color:transparent;
     background-image:linear-gradient(45deg, transparent, rgba(255,255,255,0.2));
-    border-radius:1em;
+    border-radius:8px;
     color:#202020;
     font-family:tahoma;
     box-sizing:border-box;
     padding:1rem;
+    border:1px solid #efefef;
 }
 
 /* this was used to make the boxes disappear, I don't need it anymore if we want to stack the three of them.
@@ -31,7 +33,7 @@ div{
 
 @media screen and (min-width:480px) and (max-width:1024px) {
     body{ 
-    background-color:#F49D1A;
+    background-color:#59C1BD;
     font-size:1.5em;
     display:grid;
     grid-template-areas: "first second" "third";
@@ -50,7 +52,7 @@ div{
 
 @media screen and (min-width:1024px) {
     body{ 
-    background-color:#FFE15D;
+    background-color:#A0E4CB;
     font-size:2em;
     display:grid;
     grid-template-columns: repeat(3, 1fr);
