@@ -30,7 +30,7 @@ div{
     display:none;
 }*/
 
-@media (min-width:480px) and (max-width:1024px) {
+@media screen and (min-width:480px) and (max-width:1024px) {
     body{ 
     background-color:#F49D1A;
     font-size:1.5em;
@@ -40,12 +40,12 @@ div{
     }
 
 #small{
-   width:calc((100%/3)*2);
+   width:70%;
    }
 
 #medium{ 
     /* display:block;*/
-    width:calc((100%/3));
+    width:30%;
     }
 
 #large{ 
@@ -59,7 +59,7 @@ div{
 
 }
 
-@media (min-width:1024px) {
+@media screen and (min-width:1024px) {
     body{ 
     background-color:#FFE15D;
     font-size:2em;
