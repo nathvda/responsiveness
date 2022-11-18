@@ -22,6 +22,17 @@ div{
     border:1px solid #efefef;
 }
 
+#small{
+    grid-area: first;
+}
+
+#medium{
+    grid-area: second;
+}
+
+#large{
+    grid-area: third;
+}
 /* this was used to make the boxes disappear, I don't need it anymore if we want to stack the three of them.
 /*#small{
     display:block;
@@ -36,8 +47,9 @@ div{
     background-color:#59C1BD;
     font-size:1.5em;
     display:grid;
-    grid-template-areas: "first second" "third";
-    grid-template-columns: 2fr 1fr;
+    grid-template-areas: "first first second" "third third third";
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(2,1fr);
     }
 
  /*#medium{ 
@@ -47,7 +59,6 @@ div{
         display:none;
     
     }*/
-
 }
 
 @media screen and (min-width:1024px) {
@@ -55,7 +66,7 @@ div{
     background-color:#A0E4CB;
     font-size:2em;
     display:grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "first second third";
     }
 
 /*    #large{
