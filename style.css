@@ -1,37 +1,45 @@
-html, body, h1,h2{ 
-margin: 0;
-box-sizing:border-box;}
+html,
+body,
+h1,
+h2 {
+  margin: 0;
+  box-sizing: border-box;
+}
 
 body {
-    background-color:#0D4C92;
-    font-size:1em;
-    display:grid;
-    grid-template-areas: "first" "second" "third";
-    grid-gap:20px;
-    padding:20px;
+  background-color: #0d4c92;
+  font-size: 1em;
+  display: grid;
+  grid-template-areas: "first" "second" "third";
+  grid-gap: 20px;
+  padding: 20px;
 }
 
-div{
-    background-color:transparent;
-    background-image:linear-gradient(45deg, transparent, rgba(255,255,255,0.2));
-    border-radius:8px;
-    color:#202020;
-    font-family:tahoma;
-    box-sizing:border-box;
-    padding:1rem;
-    border:1px solid #efefef;
+div {
+  background-color: transparent;
+  background-image: linear-gradient(
+    45deg,
+    transparent,
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 8px;
+  color: #202020;
+  font-family: tahoma;
+  box-sizing: border-box;
+  padding: 1rem;
+  border: 1px solid #efefef;
 }
 
-#small{
-    grid-area: first;
+#small {
+  grid-area: first;
 }
 
-#medium{
-    grid-area: second;
+#medium {
+  grid-area: second;
 }
 
-#large{
-    grid-area: third;
+#large {
+  grid-area: third;
 }
 /* this was used to make the boxes disappear, I don't need it anymore if we want to stack the three of them.
 /*#small{
@@ -42,34 +50,34 @@ div{
     display:none;
 }*/
 
-@media screen and (min-width:480px) and (max-width:1024px) {
-    body{ 
-    background-color:#59C1BD;
-    font-size:1.5em;
-    display:grid;
+@media screen and (min-width: 480px) and (max-width: 1024px) {
+  body {
+    background-color: #59c1bd;
+    font-size: 1.5em;
+    display: grid;
     grid-template-areas: "first first second" "third third third";
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:repeat(2,1fr);
-    }
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
 
- /*#medium{ 
+  /*#medium{ 
     display:block;
     } */
-   /* #small, #large{
+  /* #small, #large{
         display:none;
     
     }*/
 }
 
-@media screen and (min-width:1024px) {
-    body{ 
-    background-color:#A0E4CB;
-    font-size:2em;
-    display:grid;
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #a0e4cb;
+    font-size: 2em;
+    display: grid;
     grid-template-areas: "first second third";
-    }
+  }
 
-/*    #large{
+  /*    #large{
         display:block;
     }
 
